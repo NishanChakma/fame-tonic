@@ -1,5 +1,5 @@
 import Image from "next/image";
-import img from "../public/images/phone-mockup.png";
+import img from "../../public/images/phone-mockup.png";
 
 export default function PhoneMockup() {
   return (
