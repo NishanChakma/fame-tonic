@@ -2,13 +2,7 @@ import Image from "next/image";
 import styles from "./MainContent.module.css";
 import star from "../../public/images/star.png";
 import Vector from "../../public/images/Vector.png";
-
-const textArr = [
-  "Start growing your influence right away—no waiting required!",
-  "Create viral TikToks and Reels step by step with easy-to-follow lessons",
-  "Use a Personal AI Worker to boost your content ",
-  "Learn from expert-led courses designed for aspiring influencers",
-];
+import { textArr } from "@/utils";
 
 export default function MainContent() {
   return (
