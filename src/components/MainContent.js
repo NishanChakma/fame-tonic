@@ -6,7 +6,7 @@ import { textArr } from "@/utils";
 export default function MainContent() {
   return (
     <div className="w-full mt-[300px] md:w-[516px] md:mt-[50px]">
-      <p className="font-urbanist font-bold text-[35px] text-white leading-[100%] tracking-[0%] align-middle max-md:text-[25px] max-md:text-center">
+      <p className="font-['Urbanist'] font-bold text-[35px] text-white leading-[100%] tracking-[0%] align-middle max-md:text-[25px] max-md:text-center max-md:pl-3 max-md:pr-3">
         Want to Turn Social Media Into a Profitable Career?
       </p>
       <p className="font-['Urbanist'] font-bold text-[25px] leading-[100%] tracking-[0%] align-middle text-[#00E7F9] [text-shadow:0_4px_4px_#FC004E,_0_0_10px_#FC004E] pt-[5px] pb-[20px] text-center md:text-[35px] md:pt-[20px] md:pb-[30px] md:text-left">
