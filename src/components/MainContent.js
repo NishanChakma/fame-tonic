@@ -23,7 +23,7 @@ export default function MainContent() {
 
       <div className="flex flex-col max-md:flex-col-reverse">
         <div>
-          <button className="w-[313px] h-10 flex items-center justify-center bg-[#fc004e] rounded-lg shadow-[2px_2px_10px_#00e7f9] mt-5 transition-transform duration-200 ease-in-out hover:translate-y-[-2px] hover:shadow-[4px_4px_15px_#00e7f9] active:scale-[0.98] active:shadow-[1px_1px_6px_#00e7f9] max-md:w-full">
+          <button className="w-[313px] h-10 flex items-center justify-center bg-[#fc004e] rounded-lg shadow-[2px_2px_10px_#00e7f9] mt-5 max-md:w-full cursor-pointer">
             <p className="text-white font-extrabold text-[20px] font-Figtree leading-[100%] tracking-[0%] pr-2 md:text-[20px]">
               GET STARTED
             </p>
