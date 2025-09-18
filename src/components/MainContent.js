@@ -1,46 +1,58 @@
-"use client";
-import { useState } from "react";
+import Image from "next/image";
+import styles from "./MainContent.module.css";
+import star from "../../public/images/star.png";
+import Vector from "../../public/images/Vector.png";
+
+const textArr = [
+  "Start growing your influence right away—no waiting required!",
+  "Create viral TikToks and Reels step by step with easy-to-follow lessons",
+  "Use a Personal AI Worker to boost your content ",
+  "Learn from expert-led courses designed for aspiring influencers",
+];
 
 export default function MainContent() {
-  const [isOpen, setIsOpen] = useState(false);
-
-  const toggleMenu = () => {
-    setIsOpen(!isOpen);
-  };
-
   return (
-    <div className="flex flex-col min-h-screen bg-black text-white">
-      <header className="flex justify-between items-center p-5 bg-black">
-        <div className="text-2xl font-bold uppercase tracking-wide text-white shadow-lg">
-          fame tonicss
-        </div>
-        <nav className={`flex gap-5 ${isOpen ? "block" : "hidden"} md:flex`}>
-          <ul className="flex gap-5">
-            <li>
-              <a href="#about" className="hover:text-red-500">
-                About ussss
-              </a>
-            </li>
-            <li>
-              <a href="#contact" className="hover:text-red-500">
-                Contact
-              </a>
-            </li>
-          </ul>
-        </nav>
+    <div className={styles.contentContainer}>
+      <div className={styles.topText}>
+        Want to Turn Social Media Into a Profitable Career?
+      </div>
+      <div className={styles.dropShadowText}>
+        Discover your way to success with Fametonic:
+      </div>
+      {textArr.map((item, i) => (
         <div
-          className="md:hidden flex flex-col gap-2 cursor-pointer"
-          onClick={toggleMenu}
+          key={i}
+          style={{
+            display: "flex",
+            alignItems: "center",
+            paddingBottom: 15,
+          }}
         >
-          <div className="w-6 h-1 bg-white"></div>
-          <div className="w-6 h-1 bg-white"></div>
-          <div className="w-6 h-1 bg-white"></div>
+          <Image src={star} style={{ height: 22, width: 22 }} alt="star" />
+          <p className={styles.textBundle}>{item}</p>
         </div>
-      </header>
+      ))}
 
-      <section className="flex-grow p-10 text-center">
-        <h1 className="text-4xl font-bold">Welcome to Fame Tonic</h1>
-      </section>
+      <div className={styles.reverse}>
+        <div>
+          <button className={styles.neonbtn}>
+            <p className={styles.buttonText}>GET STARTED</p>
+            <Image src={Vector} style={{ height: 11, width: 6 }} alt=">" />
+          </button>
+          <p className={styles.buttonTxt}>
+            1-minute quiz for personalized Insights
+          </p>
+        </div>
+        <div>
+          <p className={styles.bottomText}>
+            By clicking "Get Started", you agree with Terms and Conditions,
+            Privacy Policy, Subscription Terms
+          </p>
+          <p className={styles.bottomText}>
+            Fametonic 2025 ©All Rights Reserved.
+          </p>
+        </div>
+      </div>
     </div>
   );
 }
