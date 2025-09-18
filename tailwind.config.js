@@ -8,7 +8,8 @@ module.exports = {
         background: "#000000",
       },
       fontFamily: {
-        figtree: ["Figtree", "sans-serif", "Urbanist"],
+        urbanist: ["Urbanist", "sans-serif"],
+        figtree: ["Figtree", "sans-serif"],
       },
     },
   },
